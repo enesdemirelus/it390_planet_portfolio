@@ -20,7 +20,7 @@ spec:
       containers:
         - name: galaxy
           # Always a sha- tag from CI, never latest. Change it with: kubectl set image deploy/galaxy galaxy=...
-          image: ghcr.io/YOUR-GITHUB-USER/galaxy:sha-0000000
+          image: ghcr.io/sebastianowicki/galaxy:sha-40f70cc
           ports:
             - containerPort: 8000
           env:
